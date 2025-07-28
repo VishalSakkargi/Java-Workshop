@@ -1,0 +1,22 @@
+package practise;
+import java.util.Scanner;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int a = sc.nextInt();
+		String b =String.valueOf(a);
+		String reversed = new StringBuilder(b).reverse().toString();
+	    System.out.println(reversed);
+	    if( b.equals(reversed) ) {
+	    	System.out.println("It is palindrome.");
+	    }
+	    else {
+	    	System.out.println("It is not palindrome.");
+	    }
+	    sc.close();
+	}
+
+}
