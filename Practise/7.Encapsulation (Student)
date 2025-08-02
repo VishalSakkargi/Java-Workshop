@@ -1,0 +1,40 @@
+package demo01;
+
+class Student {
+    // Step 1: private variables
+    private String name;
+    private int age;
+
+    // Step 2: public getters and setters
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setAge(int a) {
+        if (a > 0) {
+            age = a;
+        } else {
+            System.out.println("Invalid age");
+        }
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+
+public class Encapsulation01 {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setName("Vishal");
+        s.setAge(21);
+
+        System.out.println("Name: " + s.getName());
+        System.out.println("Age: " + s.getAge());
+    }
+}
